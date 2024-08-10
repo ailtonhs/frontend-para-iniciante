@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários HTML</h1>
+
+    <img src="img/form.webp" alt="">
+
+    <p>Você pode interagir com os visitantes do seu site e coletar informações deles usando <b>forms</b>.</p>
+
+    <p>Você pode usar formulários para permitir que seus visitantes:</p>
+
+    <ul>
+        <li>Entrem em contato com você</li>
+        <li>Enviem pedidos, solicitações e outras informações</li>
+        <li>Criem uma conta ou se registrem</li>
+        <li>e muito mais</li>
+    </ul>
+
+    <p>Os formulários são compostos por elementos de entrada como campos de texto, caixas de seleção e botões de envio. Esses elementos de entrada estão aninhados dentro da tag de contêiner <b>&lt;form&gt;</b>.</p>
+
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;!--os elementos de entrada vão aqui--&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+
+    <h2>Elementos &lt;input&gt;</h2>
+
+    <p>O elemento de formulários mais comum é <b>&lt;input&gt;</b>. Exitem muitas formas do elementos &lt;input&gt;, dependendo do atributo <b>type</b>.</p>
+
+    <p>Os elementos do formulário serão exibidos na mesma linha, a menos que usemos a tag <b>&lt;br&gt;</b>(quebra de linha).</p>
+
+    <p>Rótulos podem ser adicionados para os diferentes elementos de entrada com a tag <b>&lt;label&gt;</b>.</p>
+
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;label&gt;email:&lt/label&gt;
+                &lt;input type="text"&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+
+    <p>É considerado uma boa prática conectar o label aos elementos de input através do uso dos atributos <b>for</b> e <b>id</b>.</p>
+
+    <p>O atributo <b>id</b> é usado para identificar um elemento de entrada única. O atributo <b>for</b> em uma etiqueta direciona (e combina!) com o id de um input.</p>
+
+    <pre>
+        <code>
+            &lt;label for="r1"&gt;Texto&lt;/label&gt;
+
+            &lt;input type="text" id="r1"&gt;
+        </code>
+    </pre>
+
+    <h3>Lições Aprendidas</h3>
+
+    <ul>
+        <li>Você pode adicionar formulários às suas páginas web com a tag de contêiner <b>&lt;form&gt;</b></li>
+
+        <li>Os formulários são compostos de elementos <b>&lt;input&gt;</b></li>
+
+        <li>Você pode etiquetar as diferentes entradas em um formulário com a tag de contêiner <b>&lt;label&gt;</b></li>
+    </ul>
+</body>
+</html>
