@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia de Áudio</title>
+</head>
+<body>
+    <h1>Mídias de Áudio</h1>
+
+    <p>Você pode incorporar arquivos de áudio em páginas da web com a <b>&lt;audio&gt; tag de contêiner</b>.</p>
+
+    <pre>
+        <code>
+            &lt;audio&gt;
+                &lt;!--arquivo de áudio--&gt;
+            &lt;/audio&gt;
+        </code>
+    </pre>
+
+    <p>Assim como o vídeo, a <b>&lt;source&gt; tag </b> é usada para adicionar opções de fonte para áudio.</p>
+
+    <pre>
+        <code>
+            &lt;audio&gt;
+                &lt;source src="audiofile.mp3" type="audio/mp3"&gt;
+
+                &lt;source src="audiofile.ogg" type="audio/ogg"&gt;
+            &lt;/audio&gt;
+        </code>
+    </pre>
+
+    <p>Assim como o vídeo, o <b>src atributo</b> adiciona a URL do arquivo de áudio. O <b>type atributo</b> adiciiona o formato.</p>
+
+    <p>Assim como o vídeo, você pode adicionar arquivos de áudio em diferentes formatos. Os formatos de áudio comuns são: MP3, OGG e WAV.</p>
+
+    <p>Você pode usar os atributos <b>autoplay, muted</b> e <b>loop</b> para controlar o comportamento do elemento multimídia. Assim como <b>controls</b>, esses atributos têm seus valores padrão omitidos.</p>
+
+    <ul>
+        <li>Sem som: <mark>muted</mark></li>
+
+        <li>Começa a tocar automaticamente: <mark>autoplay</mark></li>
+
+        <li>Toca em repetição: <mark>loop</mark></li>
+
+        <li>Mostra controles de mídia: <mark>controls</mark></li>
+    </ul>
+
+    <p>Os atributos <b>autoplay, muted</b> e <b>loop</b> podem ser usados tanto em elementos de vídeo quanto de áudio.</p>
+
+    <h3>Principais Conclusões da Lição</h3>
+
+    <ul style="list-style-type: '⭐ ';">
+        <li>A tag &lt;audio&gt; incorpora som em uma página da web</li>
+
+        <li>Os atributos autoplay, muted e loop controlam como o multimídia se comporta</li>
+    </ul>
+</body>
+</html>
