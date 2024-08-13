@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas HTML</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas HTML</h1>
+
+    <p>As tabelas ajudam a exibir dados de uma maneira que é fácil de escanear, comparar e analizar.</p>
+
+    <p>Você pode adicionar uma tabela à sua página web com a tag do recipiente &lt;table&gt;.</p>
+
+    <pre>
+        <code>
+            &lt;table&gt;
+            &lt;!--linha e coluna--&gt;
+            &lt;/table&gt;
+        </code>
+    </pre>
+
+    <p>Você pode adicionar linhas a uma tabela com a tag de contêiner &lt;tr&gt; (table row). As linhas estão aninhadas dentro da tag &lt;table&gt;.</p>
+
+    <pre>
+        <code>
+            &lt;table&gt;
+            &lt;tr&gt;
+            &lt;!--dados da linha--&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+        </code>
+    </pre>
+
+    <p>Você pode adicionar células com a tag de contêiner <b>&lt;td&gt;</b></p>
+
+    <pre>
+        <code>
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;td&gt; Célula 1&lt;/td&gt;
+                    &lt;td&gt; Célula 2&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        </code>
+    </pre>
+
+    <p>Tabela geralmente inclue cabeçalho. Um cabeçalho é uma linha especial no topo da tabela usada para rotular cada coluna.</p>
+
+    <p>Você pode criar células de cabeçalhp com <b>&lt;th&gt;</b></p>
+
+    <pre>
+        <code>
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Nome&lt;/th&gt;
+                    &lt;th&gt;Idade&lt;/th&gt;
+                &lt;/tr&gt;
+
+                &lt;tr&gt;
+                    &lt;td&gt;Amy&lt;/td&gt;
+                    &lt;td&gt;38&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        </code>
+    </pre>
+
+    <p>Você pode criar célula que ocupam várias linhas e/ou colunas, usando os atributos <b>colspan</b> e <b>rowspan</b>. Isso é chamado de mesclagem de células</p>
+
+    <p><b>Colspan</b> é para o número de colunas que uma célula deve abranger.</p>
+
+    <pre>
+        <code>
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Month&lt;/th&gt;
+                    &lt;th&gt;Budget($)&lt;/th&gt;
+                &lt;tr&gt;
+
+                &lt;tr&gt;
+                    &lt;td&gt;January&lt;/td&gt;
+                    &lt;td&gt;500&lt;/td&gt;
+                &lt;tr&gt;
+
+                &lt;tr&gt;
+                    &lt;td&gt;February&lt;/td&gt;
+                    &lt;td&gt;400&lt;/td&gt;
+                &lt;tr&gt;
+
+                &lt;tr&gt;
+                    &lt;td colspan="2"&gt;Sum: 900&lt;/td&gt;
+                &lt;tr&gt;
+            &lt;/table&gt;
+        </code>
+    </pre>
+
+    <table>
+        <tr>
+            <th>Month</th>
+            <th>Budget($)</th>
+        </tr>
+
+        <tr>
+            <td>January</td>
+            <td>500</td>
+        </tr>
+
+        <tr>
+            <td>February</td>
+            <td>400</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">sum: 900</td>
+        </tr>
+    </table>
+
+    <p>O atributo <b>rowspan</b> especifica o número de linhas que uma célula deve abranger. Você pode usar rowspan para mesclar células verticalmente.</p>
+
+    <pre>
+        <code>
+            &lt;table&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Month&lt;/th&gt;
+                &lt;th&gt;Budget($)&lt;/th&gt;
+                &lt;th&gt;Savings($)&lt;/th&gt;
+            &lt;tr&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;January&lt;/td&gt;
+                &lt;td&gt;500&lt;/td&gt;
+                &lt;td rowspan="2"&gt;150&lt;/td&gt;
+            &lt;tr&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;February&lt;/td&gt;
+                &lt;td&gt;400&lt;/td&gt;
+            &lt;tr&gt;
+
+        &lt;/table&gt;
+        </code>
+    </pre>
+
+    <table>
+        <tr>
+            <th>Month</th>
+            <th>Budget($)</th>
+            <th>Savings($)</th>
+        </tr>
+
+        <tr>
+            <td>January</td>
+            <td>500</td>
+            <td rowspan="2">150</td>
+        </tr>
+
+        <tr>
+            <td>February</td>
+            <td>400</td>
+        </tr>
+
+    </table>
+
+    <h3>Conclusões da Lição</h3>
+
+    <ul style="list-style-type: '⭐ ';">
+        <li>Você pode adicionar tabelas às páginas da web com a tag de contêiner &lt;table&gt;</li>
+
+        <li>A tag de contêiner &lt;tr&gt; é usada para adicionar linhas</li>
+
+        <li>A tag de contêiner &lt;td&gt; é usada para adicionar dados</li>
+
+        <li>A tag de contêiner &lt;th&gt; é usada para adicionar cabeçalhos</li>
+    </ul>
+</body>
+</html>
