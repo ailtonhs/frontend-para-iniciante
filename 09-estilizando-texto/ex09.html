@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando Texto</title>
+    <style>
+        h3 {
+            text-decoration: 2px underline red;
+        }
+
+        h4 {
+            text-decoration: 4px overline green;
+        }
+
+        h5 {
+            text-decoration: 6px line-through blue;
+        }
+
+        h6 {
+            text-decoration: underline overline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estilizando Texto</h1>
+
+    <p>Vamos começar com o <b>alinhamento de texto</b>.</p>
+
+    <pre>
+        <code>
+            h1 {
+                text-align: center;
+            }
+        </code>
+    </pre>
+
+    <p>Use <b>text-align: justify</b> para alinhar o texto tanto à esquerda quanto à direita, ajustando o espaçamento entre as palavras, garantindo que cada linha tenha a mesma largura</p>
+
+    <pre>
+        <code>
+            p {
+                text-align: justify;
+            }
+        </code>
+    </pre>
+
+    <p>Você pode adicionar <b>text-decoration</b> para transmitir significado ou chamar a atenção para partes específicas do texto, como links.</p>
+
+    <pre>
+        <code>
+            h3 {
+                text-decoration: underlined;
+            }
+
+            h4 {
+                text-decoration: overlined;
+            }
+
+            h5 {
+                text-decoration: line-through;
+            }
+
+            h6 {
+                text-decoration: underlined overline
+            }
+        </code>
+    </pre>
+
+    <h3>Texto underlined</h3>
+
+    <h4>Texto Overlined</h4>
+
+    <h5>Texto line-through</h5>
+
+    <h6>Texto underlined e overline</h6>
+    <hr>
+
+    <p>O texto pode ter vários estilos de decoração, como pontilhado, duplo, tracejado e ondulado.</p>
+
+    <p>A propriedade text-decoration é uma forma curta e simples de se referir a diferentes sub-propriedades, como <b>text-decoration-line, text-decoration-color</b> e <b>text-decoration-style</b></p>
+
+    <pre>
+        <code>
+            p {
+                text-decoration: wavy overline #2A9D8F;
+            }
+        </code>
+    </pre>
+
+    <ul>
+        <li>text-decoration-line: <mark>wavy</mark></li>
+
+        <li>text-decoration-color: <mark>overline</mark></li>
+
+        <li>text-decoration-style: <mark>#2A9D8F</mark></li>
+    </ul>
+
+    <hr>
+
+    <p>A propriedade <b>text-transform</b> permite que você controle a capitalização do conteúdo do texto. Ele pode receber 3 valores <b>capitalize, uppercase</b> e lowercase.</p>
+    <hr>
+
+    <img src="img/text-shadow.png" alt="" width="400">
+
+    
+    <p>O <b>text-shadow</b> cria um efeito de profundidade, dá ênfase, ou simplesmente adiciona um toque elegante à sua tipografia.</p>
+
+    <p>O <b>deslocamento horizontal</b> é o quando para a direita (valores positivos) ou para esquerda (valores negativos).</p>
+
+    <p>O <b>deslocamento vertical</b> é o quanto para baixo (valores positivos) ou para cima (valores negativos).</p>
+
+    <p>O text-shadow pode aceitar dois valores adicionais e opcionais.</p>
+
+    <ul>
+        <li><b>blur radius:</b> a quantidade de desfoque aplicada à sombra</li>
+
+        <li><b>color:</b> a cor da sombra</li>
+    </ul>
+
+    <pre>
+        <code>
+            h1 {
+                color: #FFFFFF; /* white colored text */
+                text-shadow: 15px 12px 5px #4296CE; 
+                font-size: 4rem;
+              }
+        </code>
+    </pre>
+
+    <ul>
+        <li>deslocamento horizontal: 15px</li>
+        <li>deslocamento vertical: 12px</li>
+        <li>cor: #4296CE</li>
+        <li>raio de desfoque: 5px</li>
+    </ul>
+
+    <h3>Principais Lições</h3>
+
+    <ul style="list-style-type: '⭐ ';">
+        <li><b>text-align</b> controla o alinhamento horizontal do texto</li>
+
+        <li><b>text-decoration</b> adiciona efeito decorativos ao texto</li>
+
+        <li><b>text-transform</b> altera a capitalização do texto</li>
+
+        <li><b>text-shadow</b> aplica efeitos de sombra atrás do texto</li>
+    </ul>
+</body>
+</html>
