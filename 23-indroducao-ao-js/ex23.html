@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indrodução ao JavaScript</title>
+</head>
+<body>
+    <h1>Indrodução ao JavaScript</h1>
+
+    <p>Websites interativos são mais envolventes e interessantes. Isso pode criar efeiros duradouros na mente dos usuários.</p>
+
+    <p>O atributo <b>onclick</b> é usado para acionar uma ação quando em elemento HTML é clicado ou tocado</p>
+
+    <p>Uma das muitas ações que você pode acionar é a exibição de uma mensagem de alerta.</p>
+
+    <pre>
+        <code>
+            &lt;button onclick="alert('Olá, Mundo!')"&gt;Clique&lt;/button&gt;
+        </code>
+    </pre>
+
+    <button onclick="alert('Ola, Mundo!')">Clique</button>
+
+    <p>Você pode tornar outros elementos HTML interativos.</p>
+
+    <pre>
+        <code>
+            &lt;img src="icon.jpg" onclick="alert('Oi')"&gt;
+        </code>
+    </pre>
+
+    <p>Uma <b>function</b> é um pedaço de código que pode ser "chamado" e reutilizado em um programa quantas vezes você precisar</p>
+
+    <p>Você pode usar JavaScript para fazer alterações nos elementos HTML acionados pela entrada do usuário.</p>
+
+    <pre>
+        <code>
+            &lt;img src="img/robot-c.jpg" onclick="src='img/tree.jpg'"&gt;
+        </code>
+    </pre>
+
+    <img src="img/robot-c.jpg" alt="" onclick="src='img/tree.jpg'">
+
+    <p>O código abaixo usa dois botões para alterar a imagem exibida na página.</p>
+
+    <img id="demo" src="img/robot-c.jpg" alt=""> <br>
+
+    <button onclick="document.getElementById('demo').src='img/robot-l.jpg'">Esquerda</button>
+    <button onclick="demo.src='img/robot-r.jpg'">Direita</button>
+
+    <h3>Lições Aprendidas</h3>
+
+    <ul style="list-style-type: '⭐ ';">
+        <li><b>JavaScript</b> torna suas página web interativas</li>
+
+        <li>O atributo <b>onclick</b> aciona ações quando um usuário clica em um elemento</li>
+
+        <li>A função <b>alert()</b> gera uma mensagem com um botão ok</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do Formulário</title>
+</head>
+<body>
+    <h1>Dados do Formulário</h1>
+
+    <p>Um formulário HTML é uma maneira conveniente de enviar dados para um banco de dados hospedado em um servidor.</p>
+
+    <p>Um botão de <b>submite</b> é usado para enviar os dados em um formulário. O tipo de entrada <b>submite</b> adiciona um botão ao formulário.</p>
+
+    <pre>
+        <code>
+            &lt;form&gt;
+                &lt;label for="t1"&gt;Email&lt;/label&gt;
+                &lt;input type="text" id="t1"&gt;
+
+                &lt;label for t2="t2"&gt;Country&lt;/label&gt;
+                &lt;input type="text" id="t2"&gt;
+
+                &lt;input type="submit"&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+
+    <p>Você pode usar a entrada <b>submit</b> para enviar os dados do formulário para um banco de dados hospedado em um servidor.</p>
+
+    <p>O atributo <b>name</b> é usado para referenciar os dados após o envio do formulário</p>
+
+    <pre>
+        <code>
+            &lt;form&gt;
+            &lt;label for="t1"&gt;Email&lt;/label&gt;
+            &lt;input type="text" name="email" id="t1"&gt;
+
+            &lt;label for t2="t2"&gt;Country&lt;/label&gt;
+            &lt;input type="text" name="cidade" id="t2"&gt;
+
+            &lt;input type="submit"&gt;
+        &lt;/form&gt;
+        </code>
+    </pre>
+
+    <p>Apenas elementos de formulário com um atributo <b>name</b> terão seus valores passados para o banco de dados ao enviar um formulário.</p>
+
+    <img src="img/banco-de-dados.webp" alt="">
+
+    <h3>Principais liçoes</h3>
+
+    <ul style="list-style-type: '⭐ ';">
+        <li>O tipo de entrada <b>submit</b> permite que o usuário envie dados do formulário</li>
+
+        <li>O atributo <b>name</b> é usado para dizer ao banco de dados onde armazenar os dados</li>
+
+        <li>O atributo <b>value</b> é usado para dizer ao banco de dados o que armazenar</li>
+    </ul>
+    
+</body>
+</html>

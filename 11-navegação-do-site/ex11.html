@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação do sit</title>
+</head>
+<body>
+    <h1>Navegação do Site</h1>
+
+    <img src="img/nav-site.webp" alt="nav site" width="50%">
+
+    <p>A forma com os visitantes navegam em um site depende do seu design. Os sites vêm em 2 formas:</p>
+
+    <ul>
+        <li>Sites de várias páginas</li>
+
+        <li>Sites de uma única página</li>
+    </ul>
+
+    <h2>Tag de contêiner &lt;nav&gt;</h2>
+
+    <p>A tag de contêiner <b>&lt;nav&gt;</b> define um conjuto de links que permite ao usuário navegar entre as páginas de um site.</p>
+
+    <pre>
+        <code>
+            &lt;nav&gt;
+                &lt;a href="index.html"&gt;Home&lt;/a&gt;
+                &lt;a href="about.html"&gt;About&lt;/a&gt;
+                &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+            &lt;/nav&gt;
+        </code>
+    </pre>
+    <p>Os links para as diferentes páginas são adicionados com a tag de âncora &lt;a&gt; e aninhados dentro da tag do contêiner &lt;nav&gt;</p>
+
+    <h2>Projeto HTML</h2>
+
+    <img src="img/pro-html.webp" alt="projeto html" width="50%">
+
+    <p>O projeto HTML para um site de várias páginas é composto de diferentes documentos HTML (ou arquivos).</p>
+
+    <h2>Página Única</h2>
+
+    <img src="img/pag-unica.webp" alt="" width="50%">
+
+    <p>Um <b>site de uma única página</b> tem todos o seu conteúdo na página inicial. Qualquer link de navegação leva o visitante para diferentes seções(em vez de carregar noas páginas).</p>
+
+    <p>Para saltar para uma parte específica de um site de página única, primeiro você precisa marcar a seção com o atributo <b>id</b>(ID).</p>
+
+    <pre>
+        <code>
+            &lt;h2 id="section-1"&gt;Section 1&lt;/h2&gt;
+        </code>
+    </pre>
+
+    <p>Uma vez que o elemento ao qual você deseja saltar tenha sido marcado com um id, você pode direcioná-lo com uma tag de âncora &lt;a&gt;.</p>
+
+    <pre>
+        <code>
+            &lt;a href="#s1"&gt;Ir para S1&lt;/a&gt;
+
+            &lt;h2 id="s1"&gt;Seção 1&lt;/h2&gt;
+        </code>
+    </pre>
+
+    <h3>Conclusões da Lição</h3>
+
+    <ul style="list-style-type: '⭐ ';">
+        <li>Os sites vêm em 2 tipos diferentes: de página única ou de várias páginas</li>
+
+        <li>Você pode criar links de navegação como tags <b>&lt;a&gt;</b> dentro de uma tag <b>&lt;nav&gt;</b></li>
+
+        <li>Você pode vincular a partes específicas de uma página, dando-lhes um atributo <b>id
+        </b></li>
+    </ul>
+</body>
+</html>

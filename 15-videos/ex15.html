@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Vídeos HTML</h1>
+
+    <p>Você pode usar a tag de contêiner <b>&lt;video&gt;</b> para incorporar arquivos de vídeos em uma página da web.</p>
+
+    <pre>
+        <code>
+            &lt;video&gt;
+                &lt;!--arquivo de vídeo--&gt;
+            &lt;/video&gt;
+        </code>
+    </pre>
+
+    <p>Você pode adicionar arquivos de vídeos em diferentes formatos. Os formatos de vídeo comuns são: MP4, OGG e WebM.</p>
+
+    <pre>
+        <code>
+            &lt;video&gt;
+                &lt;source src="file.mp4" type="video/mp4"&gt;
+            &lt;/video&gt;
+        </code>
+    </pre>
+    <p>A tag vazia &lt;source&gt; fornece a localização e o formato do arquivo de vídeo.</p>
+
+    <p>O atributo src especifica a URL do arquivo de vídeo.</p>
+
+    <p>O atributo type especifica o formato do arquivo de vídeo.</p>
+
+    <p>Diferentes formatos de mídia são necessário para compatibilidade com diferentes navegadores e dispositivos. A tag &lt;source&gt; permite que você adicione vários arquivos.</p>
+
+    <pre>
+        <code>
+            &lt;video&gt;
+            &lt;source src="file.mp4" type="video/mp4"&gt;
+
+            &lt;source src="file.webm" type="video/webm"&gt;
+            &lt;/video&gt;
+        </code>
+    </pre>
+
+    <p>Quando diferentes opções de &lt;source&gt; são incluídas, o navegador escolherá a primeira que ele suporta.</p>
+
+    <p>Você pode adicionar texto entre as tags &lt;video&gt;. O texto só será exibido em navegadores que não suportam o elemento de vídeo.</p>
+
+    <pre>
+        <code>
+            &lt;video&gt;
+            &lt;source src="file.mp4" type="video/mp4"&gt;
+
+            &lt;source src="file.webm" type="video/webm"&gt;
+            &lt;/video&gt;
+
+            Video não suportado
+        </code>
+    </pre>
+
+    <p>Você pode exibir play/pause, volume e outros controles de vídeos com o atributo <b>controls</b>.</p>
+
+    <pre>
+        <code>
+            &lt;video controls&gt;
+            &lt;source src="file.mp4" type="video/mp4"&gt;
+
+            &lt;source src="file.webm" type="video/webm"&gt;
+
+            Vídeo não suportado!
+            &lt;/video&gt;
+        </code>
+    </pre>
+
+    <h3>Lições Aprendidas</h3>
+
+    <ul style="list-style-type: '⭐ ';">
+        <li>A tag <b>&lt;video&gt;</b> incorpora vídeo nas páginas da web</li>
+
+        <li>A tag <b>&lt;source&gt;</b> permite que você adicione vários arquivos de mídia</li>
+
+        <li>O atributo <b>controls</b> adiciona controles de vídeo padrão.</li>
+    </ul>
+
+
+</body>
+</html>

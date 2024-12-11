@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Inline e Block</title>
+</head>
+<body>
+    <h1>Elementos Inline e Block</h1>
+
+    <p>Cada elementos HTML é ou <b>inline</b> ou <b>block</b>.</p>
+
+    <p><b>Elementos de nível de bloco</b> sempre começam em uma nova linha. <b>Elementos inline</b> não começam em uma nova linha.</p>
+
+    <p><b>Elementos de nível de bloco</b> ocupam toda a largura disponível. <b>Elementos inline</b> só ocupam tanto de largura quanto necessário.</p>
+
+    <p>Este código resultará em 2 botões na mesma linha, por quê são elementos <b>inline.</b></p>
+
+    <pre>
+        <code>
+            &lt;button&gt;Botão 1&lt;/button&gt;
+            &lt;button&gt;Botão 2&lt;/button&gt;
+        </code>
+    </pre>
+
+    <button>Botão 1</button>
+    <button>Botão 2</button>
+
+    <p>Elemento inline podem ser aninhados dentro de elementos de nível de bloco.</p>
+
+    <pre>
+        <code>
+            &lt;p&gt;
+                &lt;a href="#"&gt;Link&lt;/a&gt;
+            &lt;/p&gt;
+        </code>
+    </pre>
+
+    <p>
+        <a href="#">Link</a>
+    </p>
+
+    <p>As tags de quebra de linha &lt;br&gt; são usadas para forçar os elementos inline a começar em uma nova linha</p>
+
+    <pre>
+        <code>
+            &lt;button&gt;Botão A&lt;/button&gt;&lt;br&gt;
+            &lt;button&gt;Botão B&lt;/button&gt;
+        </code>
+    </pre>
+
+    <button>Botão A</button> <br>
+    <button>Botão B</button>
+
+    <h3>Conclusões da Lição</h3>
+
+    <ul style="list-style-type: '⭐ ';">
+        <li>Exitem dois tipos de elemento HTML: inline e block</li>
+
+        <li>Elemento de <b>nível de bloco</b> sempre começam( e termina) em uma nova linha</li>
+
+        <li>Elementos <b>inline</b> não começam em uma nova linha</li>
+    </ul>
+</body>
+</html>
