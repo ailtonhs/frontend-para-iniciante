@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de ID e Classe</title>
+</head>
+<body>
+    <h1>Seletores de ID e classe</h1>
+
+    <h2>Seletor ID</h2>
+
+    <p>Para controle total sobre o design dos seus elementos HTML, você pode dar a eles IDs e classes.</p>
+
+    <p>O <b>atributo id</b> é usado para dar um identificador único a um elemento específico na página.</p>
+
+    <pre>
+        <code>
+            &lt;p id="intro"&gt;Tenha um ótimo momento de cinema!&lt;/p&gt;
+        </code>
+    </pre>
+
+    <p>Você pode direcionar elementos específicos usando <b>hashtag #</b> seguido pelo nome do ID como seletor.</p>
+
+    <pre>
+        <code>
+            #intro {
+                color: black;
+                background-color: green;
+            }
+        </code>
+    </pre>
+
+    <h2>Seletor de classe</h2>
+
+    <p>Outra maneira de identificar elementos é o <b>atributo de ckasse.</b> Use o atributo de classe para dar o mesmo identificador a um grupo de elementos.</p>
+
+    <pre>
+        <code>
+            &lt;p class="filme"&gt; Avatar &lt;/p&gt;
+
+            &lt;button class="filme"&gt; Assistir agora &lt;/button&gt;
+        </code>
+    </pre>
+
+    <p>Você pode criar regras de estilo para um grupo de elementos na mesma classe (grupo).</p>
+
+    <p>Use um <b>ponto .</b> seguido pelo nome da classe para direcionar todos os elementos na mesma classe.</p>
+
+    <pre>
+        <code>
+            .filme {
+                color: white;
+                background-color: navy;
+            }
+        </code>
+    </pre>
+
+    <p>Você também pode direcionar apenas aqueles elementos de um tipo específico que possuem uma determinada classe.</p>
+
+    <pre>
+        <code>
+            p.filme {
+                font-size: 18px;
+            }
+        </code>
+    </pre>
+
+    <h3>Principais pontos da lição</h3>
+
+    <ul style="list-style-type: '⭐ ';">
+        <li>O seletor <b>ID</b> usa o símbolo hash <b>#</b> e direciona a um elemento específico</li>
+
+        <li>Uma <b>classe</b> fornece um identificador comum a um grupo de elementos</li>
+
+        <li>O seletor de classe usa um <b>ponto .</b> e direciona a um grupo de elementos com a mesma classe</li>
+    </ul>
+</body>
+</html>

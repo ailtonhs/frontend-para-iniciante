@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança de Estilo</title>
+    <style>
+        div {
+            background-color: aqua;
+            padding: 15px;
+        }
+
+        div p {
+            background-color: plum;
+            color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Herança de Estilo</h1>
+
+    <p>Com elementos, o elemento externo é conhecido como o <b>parent</b>, e o elemento interno é o <b>child</b>.</p>
+
+    <pre>
+        <code>
+            &lt;p&gt;
+                A programação é uma mistura de &lt;b&gt;lógica&lt;/b&gt; e criatividade.
+            &lt;/p&gt;
+        </code>
+    </pre>
+
+    <ul>
+        <li>&lt;p&gt;: <mark>parent</mark></li>
+
+        <li>&lt;b&gt;: <mark>child</mark></li>
+    </ul>
+
+    <p>As regras de estilo para elementos pais também serão aplicadas aos elementos filhos por padrão. Isso é conhecido como <b>herança</b>. Os elementos filhos herdam estilos de seus pais.</p>
+
+    <div>
+        <p>A programação é uma mistura de <b>lógica</b> e criatividade.</p>
+    </div>
+
+    <p>Por padrão, os filhos hrdam o estilo do seu pai. Se você precisar que um filho tenha um estilo diferente, você deve escrever uma regra separada para o filho.</p>
+
+    <pre>
+        <code>
+            p {
+                color: lightgray;
+                background-color: black;
+            }
+
+            b {
+                color: plum;
+                background-color: darkslategrey;
+            }
+        </code>
+    </pre>
+
+    <p>O <b>seletor descendente</b> direciona filhos dentro de um parente especíco. Ele consiste no seletor pai, seguido de um espaço, seguido pelo seletor filho</p>
+
+    <pre>
+        <code>
+            p, b {
+                color: seagreen;
+            }
+        </code>
+    </pre>
+
+    <h3>Principais pontos da lição</h3>
+
+    <ul>
+        <li>Por padrão, um elemento <b>filho</b> vai <b>herdar</b> o estilo de seu <b>pai</b></li>
+
+        <li>Você pode <b>sobrescrever a herança de estilo</b> criando uma regra diferente para o elemento filho</li>
+
+        <li>O <b>seletor de descendentes</b> visa um filho aninhado dentro de um pai específico</li>
+    </ul>
+</body>
+</html>

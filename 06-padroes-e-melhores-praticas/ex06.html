@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padrões e Melhores Práticas</title>
+</head>
+<body>
+    <h1>Padrões e Melhores Práticas</h1>
+
+    <p>Um elemento HTML pode ser alvo de estilização de diferentes maneiras. Por exemplo, um elemento pode ter tanto uma classe quanto um ID.</p>
+
+    <pre>
+        <code>
+            &lt;p id="text1" class="info"&gt; Texto &lt;/p&gt;
+        </code>
+    </pre>
+
+    <p>Aqui estão 3 formas de mirar o mesmo elemento HTML:</p>
+
+    <ul>
+        <li>Seletor de elemento: <mark>p</mark></li>
+
+        <li>Seletor de ID: <mark>#text</mark></li>
+
+        <li>Seletor de classe: <mark>.info</mark></li>
+    </ul>
+
+    <p>Cada tipo de seletor CSS tem seu lugar nesta lista de prioridades. Quando várias regras CSS visam o mesmo elemento HTML, o navegador usa esta várias reras CSS visam o mesmo elemento HTML, o navegador usa esta ordem para decidir qual regra aplicar.</p>
+
+    <ol>
+        <li>Estilo inline</li>
+        <li>IDs</li>
+        <li>Classes</li>
+        <li>Elementos</li>
+    </ol>
+
+    <p>Esta ordem de prioridade é conhecida como <b>especificidade</b>. A especificidade é o algoritmo usado pelos navegadores para determinar a regra a ser aplicada a um elemento.</p>
+    <hr>
+
+    <p>Você pode adicionar notas ou esplicações ao seu cógigo CSS. <b>Comentários</b> ajudam outras pessoas (e você no futuro!) a ler seu código.</p>
+
+    <p>Comentários em CSS começam com <b>/*</b> e termina com <b>*/</b>.</p>
+
+    <pre>
+        <code>
+            &lt;style&gt;
+
+                /*Regra para o id box1*/
+
+                #box1 {
+                background-color: green;
+                }
+            &lt;/style&gt;
+        </code>
+    </pre>
+
+    <p>Os Comentários CSS precisa estar contidos em tags &lt;style&gt; quando se usa CSS interno.</p>
+
+    <h2>CSS externo</h2>
+
+    <p>Uma alternativa ao CSS inline e interno é o <b>CSS externo</b>. O código CSS externo é escrito fora do documento HTML, em um arquivo separado.</p>
+
+    <p>Uma das vantagens do CSS extrno é que o mesmo arquivo de estilo CSS pode ser usado por vários documentos HTML(ou páginas da web).</p>
+
+    <h3>Principais Conclusões da Lição</h3>
+
+    <ul style="list-style-type: ' ⭐ ';">
+        <li><b>Especificidade</b> indica ao navegador qual regra aplicar</li>
+
+        <li><b>Comentários</b> em CSS começam com <b>/*</b> e termina com <b>*/</b></li>
+
+        <li><b>CSS externo</b> significa um arquivo <b>.css</b> separado para as regras de estilo</li>
+    </ul>
+
+
+</body>
+</html>

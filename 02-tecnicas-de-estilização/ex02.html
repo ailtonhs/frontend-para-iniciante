@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnicas de Estilização</title>
+</head>
+<body>
+    <h1>Técnicas de Estilização</h1>
+
+    <p>Adicionar código CSS a cada elemento HTML leva tempo e torna a estrutura do seu HTML desorganizada.</p>
+
+    <p>Quando código CSS é adicionado a elementos HTML, isso é chamado de <b>inline CSS</b>.</p>
+
+    <pre>
+        <code>
+            &lt;p style="color: red;"&gt;Texto do parágrafo&lt;/p&gt;
+        </code>
+    </pre>
+
+    <p>Uma técnica alternativa de estilização é o <b>CSS interno.</b> O CSS interno é usado para estilizar a página inteira. A tag de contêiner <b>&lt;style&gt;</b> é adicionada dentro do documento HTML para agrupar todo o código CSS da página.</p>
+
+    <pre>
+        <code>
+            &lt;style&gt;
+                h2 {
+                    color: yellow;
+                }
+            &lt;/style&gt;
+        </code>
+    </pre>
+
+    <p>O <b>seletor</b> no código CSS corresponde às tags HTML que você deseja alvo.</p>
+
+    <pre>
+        <code>
+            button {
+                color: green;
+            }
+        </code>
+    </pre>
+
+    <p>Separar vários seletores com uma vírgula para aplicar o mesmo estilo a diferentes elementos. Isso torna seu código CSS mais simples.</p>
+
+    <pre>
+        <code>
+            &lt;style&gt;
+                h1, p {
+                    color: red;
+                    background-color: yellow;
+                }
+            &lt;/style&gt;
+        </code>
+    </pre>
+
+    <p>É uma boa prática incluir todo o código CSS interno na <b>&lt;head&gt;</b> da página.</p>
+
+    <pre>
+        <code>
+            &lt;head&gt;
+                &lt;style&gt;
+                    h1 {
+                        color: red;
+                        background-color: lime;
+                    }
+
+                    button {
+                        font-size: 20px;
+                    }
+                &lt;/style&gt;
+            &lt;/head&gt;
+        </code>
+    </pre>
+
+    <h3>Principais pontos da lição</h3>
+
+    <ul>
+        <li><b>CSS inline</b> é usado para estilizar elemento HTML individuais</li>
+
+        <li><b>CSS interno</b> agrupa todo o estilo de uma página dentro da <b>&lt;style&gt;</b> tag</li>
+
+        <li><b>Seletores</b> são usado para direcionar elementos HTML</li>
+    </ul>
+</body>
+</html>

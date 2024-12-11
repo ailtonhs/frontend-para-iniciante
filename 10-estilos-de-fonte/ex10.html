@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de Fontes</title>
+</head>
+<body>
+    <h1>Estilos de Fontes</h1>
+
+    <p>As fontes desempenham um papel crucial noo design da web, influenciando a legibilidade, estética e experiência do usuário. Elas dão vidas às palavras numa página e define o tom do conteúdo.</p>
+
+    <h2>A propriedae font-family</h2>
+
+    <p>A propriedade <b>font-family</b> em CSS permite especificar o <b>tipo de letra</b> para o seu texto. Isso determina como o texto aparece em uma página da web.</p>
+
+    <pre>
+        <code>
+            p {
+                font-family: Arial;
+            }
+        </code>
+    </pre>
+
+    <p>Muitas fontes são instaladas por padrão em todos os dispositivos. Estas são conhecidas como fontes <b>web safe</b>.</p>
+
+    <p>Outras fontes podem precisar ser instaladas no dispositivo do usuário, então você precisará especificar um fonte web safe como um back-up, caso o usuário não as tenha.</p>
+
+    <p>A propriedade font-family especifica uma lista de fontes, da maior propriedade para a menor. A seleção de fontes para na primeira fonte da lista que está no sistema do usuário.</p>
+
+    <pre>
+        <code>
+            p {
+                font-family: Helvetica, Georgia, Arial;
+            }
+        </code>
+    </pre>
+
+    <p>Famílias de fontes genéricas são grupos de fontes com tipos de letra semelhantes, e são usadas como fallbacks universais. É uma melhor prática colocá-las como última opção em uma propriedade de font-family, Se as fontes preferidas não estiverem disponíveis, os navegadores usarão uma fonte dessa família.</p>
+
+    <p>Use <b>aspas</b> para envolver nomes de fontes com várias palavras. É uma boa prática.</p>
+
+    <pre>
+        <code>
+            p {
+                font-family: "Courier New", monaco, monospace;
+            }
+        </code>
+    </pre>
+
+    <h2>Font-weight</h2>
+
+    <p>A propriedade <b>font-weight</b> controla a espessura(ou negrito) do texto.</p>
+
+    <pre>
+        <code>
+            .button {
+                font-weight: 500;
+            }
+        </code>
+    </pre>
+
+    <p>Você pode usar valores númericos de <b>100</b>(mais fino) para <b>900</b>(mais espesso) para especificar o peso da fonte, aumentando em <b>incrrementos de 100</b>.</p>
+
+    <pre>
+        <code>
+            #light {
+                fonte-weight: 100;
+            }
+
+            #normal {
+                font-weight: 400;
+            }
+
+            #bold {
+                font-weight: 700;
+            }
+
+            #boder {
+                font-weight: 900;
+            }
+        </code>
+    </pre>
+
+    <p>Certos valores de peso, como 400 e 700, têm equivalentes nomeados que podem ser usados diretamente como valores: normal e bold.</p>
+
+    <ul>
+        <li>normal: <b>400</b></li>
+        <li>bold: <b>700</b></li>
+    </ul>
+
+    <h3>Conclusões da Lição</h3>
+
+    <ul>
+        <li><b>font-family</b> permite especificar o tipo de letra</li>
+
+        <li>Você pode usar <b>font-weight</b> para controlar a espessura do texto</li>
+    </ul>
+</body>
+</html>

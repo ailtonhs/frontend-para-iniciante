@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando Links</title>
+    <style>
+        a:link {
+            color: #d11bce;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #6897ee;
+            background-color: #000000;
+        }
+
+        a:active {
+            color: #b8860b;
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estilizando Links</h1>
+
+    <p>Os links são a essência da web, conectando uma página a outra. Eles são cruciais para navegação, mas o estilo padrão sublinhado em azul nem sempre se ajusta a todos os designs.</p>
+
+    <p>Você pode substituir este estilo padrão com CSS para personalizar cores, fontes e decoradores.</p>
+
+    <pre>
+        <code>
+            a {
+                color: #52C8aC;
+                font-family: 'Georgia', serif;
+                background-color: #D6E5E3;
+            }
+        </code>
+    </pre>
+
+    <p>Quando os usuários interagem com um link (também outros elementos), ele muda seu <b>estado</b>. Você pode se referir ao status de um elemento com <b>pseudo seletores</b></p>
+
+    <pre>
+        <code>
+            //Define o estilo de links não visitados
+            a:link {
+                color: #d11bce;
+                text-decoration: none;
+            }
+
+            //Um link muda seu estado quando o mouse está sobre ele
+            a:hover {
+                color: #6897ee;
+                background-color: #000000;
+            }
+
+            //Clicou no link mas não soltei o botão do mouse ainda
+            a:active {
+                color: #b8860b;
+                background-color: #000000;
+            }
+        </code>
+    </pre>
+
+    <a href="#">Link</a>
+
+    <p>Por padrão, todos os links são sublinhados. Você pode remover o estilo de sublinhado definindo a propriedade <b>test-decoration</b> pa <b>none</b>.</p>
+
+    <h3>Conclusões da Lição</h3>
+
+    <ul style="list-style-type: '⭐ ';">
+        <li>Você pode usar seletores pseudo para estilizar os diferentes estados dos links</li>
+
+        <li>Você pode substituir o formato de sublinhado padão com a propriedade text-decoration</li>
+    </ul>
+</body>
+</html>
